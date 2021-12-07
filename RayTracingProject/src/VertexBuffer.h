@@ -7,9 +7,11 @@ class VertexBuffer
 private:
 	uint32_t m_vBufferID;
 public:
-	VertexBuffer(const void* data, uint32_t size);
+	
+	VertexBuffer();
 	~VertexBuffer();
 
+	void AddData(const void* data, uint32_t size);
 	void Bind() const;
 	void Unbind() const;
 };

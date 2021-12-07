@@ -36,6 +36,7 @@ void Renderer::DrawLines(const VertexArray& va, const IndexBuffer& ib, const Sha
 	shader.Bind();
 	va.Bind();
 	ib.Bind();
+
 	GLCall(glDrawElements(GL_LINES, ib.GetCount(), GL_UNSIGNED_INT, nullptr));
 
 }

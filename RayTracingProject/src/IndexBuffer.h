@@ -9,9 +9,11 @@ private:
 	uint32_t m_Count;
 
 public:
-	IndexBuffer(const uint32_t* data, uint32_t count);
+	//template<typename T>
+	IndexBuffer();
 	~IndexBuffer();
 
+	void BindData(const uint32_t* data, uint32_t count);
 	void Bind() const;
 	void Unbind() const;
 
